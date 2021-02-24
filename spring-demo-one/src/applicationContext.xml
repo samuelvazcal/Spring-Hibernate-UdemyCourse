@@ -23,6 +23,12 @@
     <bean id="myNewCoach"
     	class="com.samuelvazquez.SoccerCoach">
     </bean>
+    <!-- bean for setter injection -->
+    <bean id="myCricketCoach"
+    	class="com.samuelvazquez.CricketCoach">
+    	<!-- set up setter injection -->
+    	<property name="fortuneService" ref="myFortune" />
+    </bean>
 </beans>
 
 
