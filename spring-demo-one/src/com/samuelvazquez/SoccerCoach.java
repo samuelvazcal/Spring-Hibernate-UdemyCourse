@@ -6,4 +6,9 @@ public class SoccerCoach implements Coach{
 		return "Spend 20 minutes shooting from a square pass";
 	}
 
+	@Override
+	public String getDailyFortune() {
+		return null;
+	}
+
 }
