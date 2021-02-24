@@ -18,16 +18,18 @@
     	class="com.samuelvazquez.TrackCoach">
     	<!-- set up constructor injection -->
     	<constructor-arg ref="myFortune" />
-    </bean>
-    <!-- bean for PracticeActivity1 -->
+    </bean>    <!-- bean for PracticeActivity1 -->
     <bean id="myNewCoach"
     	class="com.samuelvazquez.SoccerCoach">
     </bean>
+
     <!-- bean for setter injection -->
     <bean id="myCricketCoach"
     	class="com.samuelvazquez.CricketCoach">
     	<!-- set up setter injection -->
     	<property name="fortuneService" ref="myFortune" />
+    	<!-- inject literal values -->
+    	<property name="emailAddress" value="samuel@abnb.com" />
     </bean>
 </beans>
 
