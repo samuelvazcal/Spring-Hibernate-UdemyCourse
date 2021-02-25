@@ -6,13 +6,23 @@ public class CricketCoach implements Coach {
 	private FortuneService fortuneService;
 	//add new fields for emailAddress and team
 	private String emailAddress;
+	private String team;
 	
 	//create a no-arg constructor
 	public CricketCoach() {
 		System.out.println("CricketCoach: inside no-arg constructor");
 	}
 
-	public String getEmailAddress() {
+	
+	public String getTeam() {
+		return team;
+	}
+
+	public void setTeam(String team) {
+		this.team = team;
+	}
+
+	String getEmailAddress() {
 		return emailAddress;
 	}
 
