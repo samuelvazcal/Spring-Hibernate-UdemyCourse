@@ -15,25 +15,12 @@
     <bean id="myFortune"
     	class="com.samuelvazquez.HappyFortuneService">
     </bean>
-    <!-- first bean for this spring application -->
-    <bean id="myCoach" 
-    	class="com.samuelvazquez.TrackCoach">
+
+    <!-- bean for PracticeActivity2 -->
+    <bean id="mySwimmingCoach"
+    	class="com.samuelvazquez.SwimmingCoach">
     	<!-- set up constructor injection -->
     	<constructor-arg ref="myFortune" />
-    </bean>    
-    <!-- bean for PracticeActivity1 -->
-    <bean id="myNewCoach"
-    	class="com.samuelvazquez.SoccerCoach">
-    </bean>
-
-    <!-- bean for setter injection -->
-    <bean id="myCricketCoach"
-    	class="com.samuelvazquez.CricketCoach">
-    	<!-- set up setter injection -->
-    	<property name="fortuneService" ref="myFortune" />
-    	<!-- inject literal values -->
-    	<property name="emailAddress" value="samuel@abnb.com" />
-    	<property name="team" value="${foo.team}" />
     </bean>
 </beans>
 
